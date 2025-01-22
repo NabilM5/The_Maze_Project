@@ -1,0 +1,102 @@
+The Maze Project - MVP
+
+Cohort 22 | ALX SE Program
+GitHub Repository: The Maze Project: https://github.com/NabilM5/The_Maze_Project
+
+Introduction
+
+The Maze Project is a 3D maze game built with SDL2, designed to challenge players with navigating through mazes while providing an engaging and immersive experience. This MVP (Minimum Viable Product) serves as the foundation for a fully developed game, demonstrating core gameplay mechanics, collision detection, and visual rendering.
+
+Core Features
+
+Walls
+
+The maze is represented by a 2D array and rendered using the SDL2 graphics library.
+	•	Implementation:
+	•	A 2D array stores the maze layout, where walls and open spaces are defined.
+	•	SDL2’s rendering functions are used to draw walls, represented by rectangles or lines.
+
+Orientation
+
+Players control movement and rotation using the arrow keys.
+	•	Implementation:
+	•	SDL_Event handles user input.
+	•	The player’s position and orientation are updated dynamically based on input.
+
+Movement
+
+Players can move forward, backward, left, and right within the maze.
+	•	Implementation:
+	•	A function processes player input and updates the player’s position relative to their current orientation.
+
+Collision Detection (Ouch)
+
+Players cannot move through walls. If a collision is detected, movement stops.
+	•	Implementation:
+	•	A collision detection function checks the player’s position against the maze’s wall positions.
+	•	Movement halts if the player intersects with a wall.
+
+Parser
+
+The maze layout is read from a text file and stored in a 2D array.
+	•	Implementation:
+	•	A parser reads the text file containing the maze’s design.
+	•	The data is processed and stored in a structured 2D array.
+
+Map Rendering
+
+The maze is visually drawn on the screen with distinct colors for walls, ground, and ceiling.
+	•	Implementation:
+	•	The stored 2D array data is used to render the maze.
+	•	Different colors are applied to enhance visual clarity.
+
+Textures
+
+Basic textures are applied to walls for visual appeal.
+	•	Implementation:
+	•	SDL2’s texture rendering functions are used to load and apply wall textures.
+
+
+Data Modeling
+
+User Story
+
+As a user, I want to play an engaging maze game built with SDL2, where I can navigate a visually appealing maze, overcome obstacles, and improve my skills.
+	•	Game Flow:
+	•	Upon starting, users are presented with a main menu offering options to:
+	1.	Start a new game.
+	2.	Load a saved game.
+	3.	Quit.
+	•	Users can select difficulty levels that influence maze size and obstacles.
+	•	Gameplay:
+	•	Players control a character using the arrow keys.
+	•	The game includes a timer, a score system, and collectible items (e.g., coins).
+	•	Obstacles add complexity and require strategic navigation.
+	•	Completion:
+	•	Upon finishing the maze, players see a congratulatory message displaying their time and score.
+	•	An option to save progress is provided.
+	•	Visuals and Sound:
+	•	High-quality graphics enhance immersion.
+	•	Sound effects and background music add excitement and challenge.
+
+
+Development Highlights
+	1.	Planning and Research:
+The project started with researching ray-casting techniques and the SDL2 library to create an efficient and responsive game engine.
+	2.	Core Algorithms:
+Implemented ray-casting logic for rendering the 3D maze and optimized player movement for smooth gameplay.
+	3.	Challenges Overcome:
+	•	Debugging rendering issues for accurate wall distances.
+	•	Optimizing collision detection for real-time responsiveness.
+	4.	Team Collaboration:
+This project reflects individual effort as part of ALX SE Cohort 22, showcasing the problem-solving and programming skills honed during the program.
+
+Live Demo and Next Steps
+
+The current MVP demonstrates the foundational features of The Maze Project. Future enhancements will include:
+	•	Improved graphics with dynamic lighting.
+	•	Advanced AI for obstacles or enemy characters.
+	•	A leaderboard to increase competitiveness.
+
+Check out the GitHub repository for the complete source code: The Maze Project: https://github.com/NabilM5/The_Maze_Project
+
